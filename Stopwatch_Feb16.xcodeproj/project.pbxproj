@@ -14,6 +14,10 @@
 		91986A901E5679E9005C3DC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91986A8E1E5679E9005C3DC6 /* LaunchScreen.storyboard */; };
 		91986A9B1E5679E9005C3DC6 /* Stopwatch_Feb16Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91986A9A1E5679E9005C3DC6 /* Stopwatch_Feb16Tests.swift */; };
 		91986AA61E5679E9005C3DC6 /* Stopwatch_Feb16UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91986AA51E5679E9005C3DC6 /* Stopwatch_Feb16UITests.swift */; };
+		91986AC11E568A2B005C3DC6 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = 91986ABD1E568A2B005C3DC6 /* start.png */; };
+		91986AC21E568A2B005C3DC6 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 91986ABE1E568A2B005C3DC6 /* stop.png */; };
+		91986AC31E568A2B005C3DC6 /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 91986ABF1E568A2B005C3DC6 /* reset.png */; };
+		91986AC41E568A2B005C3DC6 /* lap.png in Resources */ = {isa = PBXBuildFile; fileRef = 91986AC01E568A2B005C3DC6 /* lap.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		91986AA11E5679E9005C3DC6 /* Stopwatch_Feb16UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Stopwatch_Feb16UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91986AA51E5679E9005C3DC6 /* Stopwatch_Feb16UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch_Feb16UITests.swift; sourceTree = "<group>"; };
 		91986AA71E5679E9005C3DC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91986ABD1E568A2B005C3DC6 /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
+		91986ABE1E568A2B005C3DC6 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		91986ABF1E568A2B005C3DC6 /* reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reset.png; sourceTree = "<group>"; };
+		91986AC01E568A2B005C3DC6 /* lap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lap.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,7 @@
 				91986A851E5679E9005C3DC6 /* AppDelegate.swift */,
 				91986A871E5679E9005C3DC6 /* ViewController.swift */,
 				91986A891E5679E9005C3DC6 /* Main.storyboard */,
+				91986AB61E56880E005C3DC6 /* buttonImages */,
 				91986A8C1E5679E9005C3DC6 /* Assets.xcassets */,
 				91986A8E1E5679E9005C3DC6 /* LaunchScreen.storyboard */,
 				91986A911E5679E9005C3DC6 /* Info.plist */,
@@ -123,6 +132,17 @@
 				91986AA71E5679E9005C3DC6 /* Info.plist */,
 			);
 			path = Stopwatch_Feb16UITests;
+			sourceTree = "<group>";
+		};
+		91986AB61E56880E005C3DC6 /* buttonImages */ = {
+			isa = PBXGroup;
+			children = (
+				91986ABD1E568A2B005C3DC6 /* start.png */,
+				91986ABE1E568A2B005C3DC6 /* stop.png */,
+				91986ABF1E568A2B005C3DC6 /* reset.png */,
+				91986AC01E568A2B005C3DC6 /* lap.png */,
+			);
+			name = buttonImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +253,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				91986A901E5679E9005C3DC6 /* LaunchScreen.storyboard in Resources */,
+				91986AC41E568A2B005C3DC6 /* lap.png in Resources */,
+				91986AC31E568A2B005C3DC6 /* reset.png in Resources */,
+				91986AC21E568A2B005C3DC6 /* stop.png in Resources */,
 				91986A8D1E5679E9005C3DC6 /* Assets.xcassets in Resources */,
+				91986AC11E568A2B005C3DC6 /* start.png in Resources */,
 				91986A8B1E5679E9005C3DC6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
