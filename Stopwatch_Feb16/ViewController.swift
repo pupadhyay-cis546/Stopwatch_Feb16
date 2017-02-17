@@ -68,6 +68,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             addLap = false
             lapResetButton.setImage(UIImage(named:"lap.png"), for: .normal)
+            laps.removeAll(keepingCapacity: false)
+            lapsTableView.reloadData()
             fractions = 0
             seconds = 0
             minutes = 0
@@ -91,11 +93,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 func updateStopWatch() {
     fractions += 1
     if fractions == 100 {
-        
         seconds += 1
         fractions = 0
-        
-    }
+        }
     
     if seconds == 60 {
         minutes += 1
@@ -120,7 +120,7 @@ func updateStopWatch() {
         
         let cell = UITableViewCell(style: UITableViewCellStyle.value1, reuseIdentifier: "Cell")
         cell.backgroundColor = self.view.backgroundColor
-        cell.textLabel?.text = "Lap \(indexPath.row)"
+        cell.textLabel?.text = "Lap \(laps.count-indexPath.row)"
         cell.detailTextLabel?.text = laps[indexPath.row]
         
         return cell
